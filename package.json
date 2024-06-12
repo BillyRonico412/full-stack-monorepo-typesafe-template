@@ -1,0 +1,24 @@
+{
+  "name": "control-pass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "back",
+    "front"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "1.7.3"
+  },
+  "dependencies": {
+    "@trpc/client": "^11.0.0-rc.396",
+    "@trpc/server": "^11.0.0-rc.396",
+    "zod-prisma": "^0.5.4"
+  }
+}
