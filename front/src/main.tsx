@@ -1,12 +1,10 @@
+import { ClerkProvider } from "@clerk/clerk-react"
 import { RouterProvider, createRouter } from "@tanstack/react-router"
 import { StrictMode } from "react"
+import { CookiesProvider } from "react-cookie"
 import ReactDOM from "react-dom/client"
 import "./index.css"
-
-// Import the generated route tree
 import { routeTree } from "./routeTree.gen"
-import { ClerkProvider } from "@clerk/clerk-react"
-import { CookiesProvider } from "react-cookie"
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 

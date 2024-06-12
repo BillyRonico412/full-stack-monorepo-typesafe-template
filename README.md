@@ -21,6 +21,27 @@ It uses the following technologies:
 
 ### Back end
 
-1. Run `npx prisma generate`
-2. 
+1. `cd back`
+2. Create a `.env` file with the following content:
 
+```bash
+DATABASE_URL=""
+PORT = ""
+CLERK_PUBLISHABLE_KEY=""
+CLERK_SECRET_KEY=""
+UUID_ADMIN=""
+```
+3. Run `npm run dev`
+
+### Front end
+
+1. `cd front`
+2. Create a `.env` file with the following content:
+
+```bash
+VITE_CLERK_PUBLISHABLE_KEY=""
+VITE_SERVER_URL=""
+```
+
+3. Run `npm run dev`
+4. Open your browser at `http://localhost:5173`
