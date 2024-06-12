@@ -16,5 +16,6 @@ jobs:
             git pull 
             sudo docker stop ${{github.repository}} || true && sudo docker rm ${{github.repository}} || true
             cd ./back
+            sudo docker image rm ${{github.repository}} || true
             sudo docker image build -t ${{github.repository}} .
             sudo docker container run --name ${{github.repository}} -d -p ${{ secrets.PORT }}:3000 -v /root/${{github.repository}}/back/.env:/app/.env ${{github.repository}} -v /root/${{github.repository}}/back/prisma/dev.db:/app/prisma/dev.db+
