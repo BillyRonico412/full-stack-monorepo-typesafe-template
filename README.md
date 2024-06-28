@@ -10,7 +10,7 @@ It uses the following technologies:
 - [TanstackRouter](https://tanstack.com/router/latest)
 - [tRPC](https://trpc.io/)
 - [Prisma](https://www.prisma.io/)
-- [SQLLite](https://www.sqlite.org/index.html)
+- [SQLite](https://www.sqlite.org/index.html)
 - [Clerk](https://clerk.com/docs)
 
 ## Getting started
